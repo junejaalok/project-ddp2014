@@ -61,7 +61,7 @@ shinyUI(fluidPage(
 
 ```
 
---- .class #id 
+--- .class #id
 
 ## R code and shiny (server.R)
 
