@@ -34,7 +34,7 @@
   <hgroup class="auto-fadein">
     <h1>Project-ddp2014</h1>
     <h2>Project presentation of Unit conversion dynamic UI</h2>
-    <p>Alok Juneja<br/></p>
+    <p>Alok Juneja<br/>Presentation made on Sat Jun 14 19:02:00 2014</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -80,6 +80,129 @@
   <!-- Presenter Notes -->
 </slide>
 
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>R code and shiny (ui.R)</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(shiny)
+
+shinyUI(fluidPage(
+  headerPanel(&quot;Unit converter&quot;),
+  fluidRow(column(10,
+    fluidRow(column(4,
+      radioButtons(&quot;id1&quot;, &quot;Choose option&quot;,
+                   c(&quot;Temperature&quot; = &quot;Temperature&quot;,
+                     &quot;Length&quot; = &quot;Length&quot;)),
+
+      # This outputs the dynamic UI component based on the option above
+        uiOutput(&quot;ui1&quot;),
+      textInput(&#39;val1&#39;,&quot;Enter the value&quot;),
+        uiOutput(&quot;ui2&quot;)
+
+    ),
+    column(6,
+    mainPanel(
+        verbatimTextOutput(&quot;typ&quot;),
+        verbatimTextOutput(&quot;ans&quot;)
+  )))
+))))
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>R code and shiny (server.R)</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(shiny)
+
+converter &lt;- function(id,from,to,val) {
+  switch(id,
+    &quot;Temperature&quot;={
+            switch(from,
+                &quot;Celsius&quot;={
+                    switch(to,
+                        &quot;Celsius&quot; = round(val,digits=6),
+                        &quot;Fahrenheit&quot; = round((val * 9/5) + 32,digits=6),
+                        &quot;Kelvin&quot; = round(val + 273.15,digits=6))
+                },
+                &quot;Fahrenheit&quot;={
+                    switch(to,
+                        &quot;Celsius&quot; = round((val - 32 ) * 5/9,digits=6),
+                        &quot;Fahrenheit&quot; = round(val,digits=6),
+                        &quot;Kelvin&quot; = round(((val - 32 ) * 5/9) + 273.15,digits=6))
+                },
+                &quot;Kelvin&quot;={
+                    switch(to,
+                    &quot;Celsius&quot; = round(val - 273.15,digits=6),
+                    &quot;Fahrenheit&quot; = round(((val - 273.15) * 9/5) + 32,digits=6),
+                    &quot;Kelvin&quot; = round(val,digits=6))
+                }
+            )
+        },
+        &quot;Length&quot; = {
+            switch(from,
+                &quot;Kilometers&quot; = {
+                    switch(to,
+                        &quot;Kilometers&quot; = round(val,digits=6),
+                        &quot;Miles&quot; = round(val * 0.62137,digits=6),
+                        &quot;Yards&quot; = round(val * 1093.6,digits=6))
+                },
+                &quot;Miles&quot; = {
+                    switch(to,
+                        &quot;Kilometers&quot; = round(val * 1.609344,digits=6),
+                        &quot;Miles&quot; = round(val,digits=6),
+                        &quot;Yards&quot; = round(val * 1760,digits=6))
+                },
+                &quot;Yards&quot; = {
+                    switch(to,
+                        &quot;Kilometers&quot; = round(val * 0.00091,digits=6),
+                        &quot;Miles&quot; = round(val * 0.00056818,digits=6),
+                        &quot;Yards&quot; = round(val,digits=6))
+                }
+            )
+        }
+    )
+} 
+
+shinyServer(
+  function(input, output) {
+    # Depending on input$id1, generate a different conversion units
+    # UI component and send it to the client.
+
+    output$ui1 &lt;- renderUI({
+      if (is.null(input$id1))
+        return()
+
+        switch(input$id1,
+        &quot;Temperature&quot; = selectInput(&quot;from&quot;, &quot;From&quot;, c(&quot;Celsius&quot;, &quot;Fahrenheit&quot;, &quot;Kelvin&quot;)),
+        &quot;Length&quot; = selectInput(&quot;from&quot;, &quot;From&quot;, c(&quot;Kilometers&quot;, &quot;Miles&quot;,&quot;Yards&quot;)))
+        })
+
+    output$ui2 &lt;- renderUI({
+      if (is.null(input$id1))
+        return()
+
+    switch(input$id1,
+        &quot;Temperature&quot; = selectInput(&quot;to&quot;, &quot;To&quot;, c(&quot;Celsius&quot;, &quot;Fahrenheit&quot;, &quot;Kelvin&quot;)),
+        &quot;Length&quot; = selectInput(&quot;to&quot;, &quot;To&quot;, c(&quot;Kilometers&quot;, &quot;Miles&quot;,&quot;Yards&quot;)))
+        })
+
+
+  output$typ &lt;- renderText({paste(&quot;Convert&quot;, input$id1 )})  
+  output$ans &lt;- renderText({paste(input$val1, input$from, &quot;=&quot;,converter(toString(input$id1),toString(input$from),toString(input$to),as.double(input$val1)),input$to)})
+  }
+)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
@@ -100,6 +223,18 @@
       <a href="#" target="_self" rel='tooltip' 
         data-slide=3 title='Different systems'>
          3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='R code and shiny (ui.R)'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='R code and shiny (server.R)'>
+         5
       </a>
     </li>
   </ul>
