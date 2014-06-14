@@ -2,8 +2,8 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Sat Jun 14 22:54:51 2014
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+job         : Presentation made on Sat Jun 14 23:48:11 2014
+framework   : shower        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
@@ -61,7 +61,7 @@ shinyUI(fluidPage(
 ))))
 ```
 
---- .class #id overflow: stroll
+--- .class #id
 
 ## R code and shiny (server.R)
 
