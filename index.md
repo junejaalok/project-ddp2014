@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Sun Jun 15 16:24:01 2014
+job         : Presentation made on Sun Jun 15 17:38:05 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -11,20 +11,16 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
-
-*** left
-
-1. Edit YAML front matter
-2. Write using R Markdown
-
-*** right
-
-3. Use an empty line followed by three dashes to separate slides!
-
---- .class #id 
-
 ## Why Unit conversion?
+
+In our daily life we have to quantify the things that we use/consume.
+
+A system of measurement is a set of units of measurement which can be used to specify anything which can be measured. 
+
+In modern systems of measurement, some quantities are designated as fundamental units, meaning all other needed units can be derived from them, whereas in the early and most historic eras, the units were given by fiat (see statutory law) by the ruling entities and were not necessarily well inter-related or self-consistent.
+
+
+The metric system is an internationally agreed decimal system of measurement that was originally based on the mètre des Archives and the kilogramme des Archives introduced by France in 1799.
 
 In the present global In our daily life where itemthe field of science, the metric system is used in performing measurements. The metric system is actually easier to use than the English system, as you will see shortly. The metric system uses prefixes to indicate the magnitude of a measured quantity. The prefix itself gives the conversion factor. You should memorize some of the common prefixes, as you will be using them on a regular basis.
 
