@@ -15,9 +15,12 @@ knit        : slidify::knit2slides
 
 In our daily life we have to quantify the things that we use/consume.
 
-A system of measurement is a set of units of measurement which can be used to specify anything which can be measured. 
+A system of measurement is a set of units of measurement which can be used to specify anything which can be measured.
 
-In modern systems of measurement, some quantities are designated as fundamental units, meaning all other needed units can be derived from them, whereas in the early and most historic eras, the units were given by fiat (see statutory law) by the ruling entities and were not necessarily well inter-related or self-consistent.
+System of measurement
+
+Metric system
+Imperial and US customary units
 
 
 The metric system is an internationally agreed decimal system of measurement that was originally based on the mètre des Archives and the kilogramme des Archives introduced by France in 1799.
