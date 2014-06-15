@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Sun Jun 15 15:13:20 2014
+job         : Presentation made on Sun Jun 15 16:24:01 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -13,13 +13,12 @@ knit        : slidify::knit2slides
 
 ## Read-And-Delete
 
-*** {name: left}
+*** left
 
 1. Edit YAML front matter
 2. Write using R Markdown
 
-*** {name: rigth}
-
+*** right
 
 3. Use an empty line followed by three dashes to separate slides!
 

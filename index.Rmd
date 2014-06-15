@@ -13,13 +13,12 @@ knit        : slidify::knit2slides
 
 ## Read-And-Delete
 
-*** {name: left}
+*** left
 
 1. Edit YAML front matter
 2. Write using R Markdown
 
-*** {name: rigth}
-
+*** right
 
 3. Use an empty line followed by three dashes to separate slides!
 
