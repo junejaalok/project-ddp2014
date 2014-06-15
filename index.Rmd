@@ -24,14 +24,16 @@ System of measurement
     in the early metric system there were two fundamental or base units, the metre for length and the gram for mass.
 
 2. Imperial and US customary units:
-    
+
 --- .class #id 
 
-## Different systems
+## Temperature / Length Conversions
 
-Length conversion
+Temperature conversion
 
-$^{\circ}\mathrm{C} = (^{\circ}\mathrm{F} - 32)/1.8$ 
+$^{\circ}\mathrm{C} = (^{\circ}\mathrm{F} - 32) * 5/9$
+
+$^{\circ}\mathrm{F} = (^{\circ}\mathrm{C} * 9/5) + 32$ 
 
 --- .class #id 
 

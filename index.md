@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Sun Jun 15 18:09:13 2014
+job         : Presentation made on Sun Jun 15 18:32:46 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -24,14 +24,16 @@ System of measurement
     in the early metric system there were two fundamental or base units, the metre for length and the gram for mass.
 
 2. Imperial and US customary units:
-    
+
 --- .class #id 
 
-## Different systems
+## Temperature / Length Conversions
 
-Length conversion
+Temperature conversion
 
-$^{\circ}\mathrm{C} = (^{\circ}\mathrm{F} - 32)/1.8$ 
+$^{\circ}\mathrm{C} = (^{\circ}\mathrm{F} - 32) * 5/9$
+
+$^{\circ}\mathrm{F} = (^{\circ}\mathrm{C} * 9/5) + 32$ 
 
 --- .class #id 
 
