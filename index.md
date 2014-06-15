@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Sun Jun 15 18:03:09 2014
+job         : Presentation made on Sun Jun 15 18:08:36 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -13,9 +13,7 @@ knit        : slidify::knit2slides
 
 ## Why Unit conversion?
 
-In our daily life we have to quantify the things that we use/consume.
-
-A system of measurement is a set of units of measurement which can be used to specify anything which can be measured.
+A system of measurement is a set of units of measurement which we use in our daily life to quantify the things that we use/consume.
 
 System of measurement
 
@@ -27,11 +25,6 @@ System of measurement
 
 2. Imperial and US customary units:
     
-
-The metric system is an internationally agreed decimal system of measurement that was originally based on the mètre des Archives and the kilogramme des Archives introduced by France in 1799.
-
-In the present global In our daily life where itemthe field of science, the metric system is used in performing measurements. The metric system is actually easier to use than the English system, as you will see shortly. The metric system uses prefixes to indicate the magnitude of a measured quantity. The prefix itself gives the conversion factor. You should memorize some of the common prefixes, as you will be using them on a regular basis.
-
 --- .class #id 
 
 ## Different systems
