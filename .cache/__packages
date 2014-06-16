@@ -2,4 +2,5 @@ base
 devtools
 knitr
 shiny
+shinyapps
 slidify
