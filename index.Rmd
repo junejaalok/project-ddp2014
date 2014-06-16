@@ -23,7 +23,7 @@ There are several systems of measurements used in different countries and in dif
 4. Non-standard units
 5. Units of currency
 
---- .class #id 
+--- .outfont #id 
 
 ## Temperature / Length / Volume Conversions
 
@@ -45,9 +45,9 @@ $Yard = Km * 1093.6$
 
 Volume conversion
 
-$Ml = US oz * 29.5735$
+$mL = US oz * 29.5735$
 
---- .class #id font-size: 8px
+--- .codefont #id
 
 ## Examples used in daily life
 
@@ -80,3 +80,22 @@ https://junejaalok.shinyapps.io/project-ddp2014/
 In case the DESCRIPTION  and README.md does not show you the full GUI on web browser, try to resize your web browser otherwise please use the following link... 
 
 https://junejaalok.shinyapps.io/project-ddp2014/?showcase=0
+
+--- .class #id
+
+## References 
+
+Following web-pages helped me to get better insight of making shiny application and slidify presentation
+
+http://slidify.org/samples/intro/index.html#1
+
+http://stackoverflow.com/questions/23747704/font-size-and-line-spacing-r-slidify
+
+https://gist.github.com/wch/9609200
+
+https://gist.github.com/wch/9689441
+
+https://github.com/ramnathv/slidify/issues/158
+
+https://gist.github.com/jeromyanglim/2716336
+
