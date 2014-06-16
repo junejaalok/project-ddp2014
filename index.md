@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Tue Jun 17 01:19:39 2014
+job         : Presentation made on Tue Jun 17 01:39:27 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -115,4 +115,6 @@ https://gist.github.com/wch/9689441
 https://github.com/ramnathv/slidify/issues/158
 
 https://gist.github.com/jeromyanglim/2716336
+
+https://github.com/rstudio/shinyapps/blob/master/guide/guide.md
 

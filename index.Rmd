@@ -99,3 +99,5 @@ https://github.com/ramnathv/slidify/issues/158
 
 https://gist.github.com/jeromyanglim/2716336
 
+https://github.com/rstudio/shinyapps/blob/master/guide/guide.md
+
