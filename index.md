@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Mon Jun 16 18:06:24 2014
+job         : Presentation made on Mon Jun 16 18:43:06 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -94,6 +94,6 @@ Application on shinapps.io
 
 https://junejaalok.shinyapps.io/project-ddp2014/
 
-In case 
+In case the DESCRIPTION  and README.md does not show you the full GUI on web browser, try to resize your web browser otherwise please use the following link... 
 
 https://junejaalok.shinyapps.io/project-ddp2014/?showcase=0

@@ -77,6 +77,6 @@ Application on shinapps.io
 
 https://junejaalok.shinyapps.io/project-ddp2014/
 
-In case 
+In case the DESCRIPTION  and README.md does not show you the full GUI on web browser, try to resize your web browser otherwise please use the following link... 
 
 https://junejaalok.shinyapps.io/project-ddp2014/?showcase=0
