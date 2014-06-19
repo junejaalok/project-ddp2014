@@ -2,14 +2,22 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Fri Jun 20 00:20:32 2014
+job         : Presentation made on Fri Jun 20 01:12:40 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+widgets     : [bootstrap,mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
+
+<!-- Limit image width and height -->
+<style type='text/css'>
+img {
+    max-height: 500px;
+    max-width: 960px;
+}
+</style>
 
 ## Why Unit conversion?
 
@@ -63,13 +71,13 @@ bd_cel=37
 ```
 
 ```r
-#Q2. How many kilometers is equivalent to 1 mile in US?
+#Q2. How many meters is equivalent to 1 mile in US?
 dis_mile=1
-dis_mile*1609.344/1000
+dis_mile*1609.344
 ```
 
 ```
-## [1] 1.609
+## [1] 1609
 ```
 
 ```r
@@ -98,6 +106,22 @@ In case the DESCRIPTION  and README.md does not show you the full GUI on web bro
 
 https://junejaalok.shinyapps.io/project-ddp2014/?showcase=0
 
+--- &carousel .span12
+
+## Carousel
+
+*** {class: active, img: "assets/img/convert-temperature.png"}
+
+Convert Temperature
+
+*** {img: "assets/img/convert-length.png"}
+
+Convert Length
+
+*** {img: "assets/img/convert-volume.png"}
+
+Convert Volume
+
 --- .class #id
 
 ## References 
@@ -117,4 +141,10 @@ https://github.com/ramnathv/slidify/issues/158
 https://gist.github.com/jeromyanglim/2716336
 
 https://github.com/rstudio/shinyapps/blob/master/guide/guide.md
+
+https://github.com/ramnathv/carouselLayout
+
+http://stackoverflow.com/questions/16904054/slidify-how-to-position-an-image
+
+
 

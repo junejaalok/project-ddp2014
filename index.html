@@ -13,7 +13,8 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/codefont.css"></link>
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/codefont.css"></link>
 <link rel=stylesheet href="./assets/css/ribbons.css"></link>
 <link rel=stylesheet href="./assets/css/scroll.css"></link>
 <link rel=stylesheet href="./assets/css/txtfont.css"></link>
@@ -37,7 +38,7 @@
   <hgroup class="auto-fadein">
     <h1>Project-ddp2014</h1>
     <h2>Project presentation of Unit conversion dynamic UI</h2>
-    <p>Alok Juneja<br/>Presentation made on Fri Jun 20 00:20:32 2014</p>
+    <p>Alok Juneja<br/>Presentation made on Fri Jun 20 01:12:40 2014</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -45,11 +46,19 @@
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Why Unit conversion?</h2>
-  </hgroup>
   <article data-timings="">
-    <p>A system of measurement is a set of units of measurement which we use in our daily life to quantify the things that we use/consume.</p>
+    <!-- Limit image width and height -->
+
+<style type='text/css'>
+img {
+    max-height: 500px;
+    max-width: 960px;
+}
+</style>
+
+<h2>Why Unit conversion?</h2>
+
+<p>A system of measurement is a set of units of measurement which we use in our daily life to quantify the things that we use/consume.</p>
 
 <p>There are several systems of measurements used in different countries and in different fields of science depending on the requirements. To name few..</p>
 
@@ -109,12 +118,12 @@ bd_cel=37
 <pre><code>## [1] 98.6
 </code></pre>
 
-<pre><code class="r">#Q2. How many kilometers is equivalent to 1 mile in US?
+<pre><code class="r">#Q2. How many meters is equivalent to 1 mile in US?
 dis_mile=1
-dis_mile*1609.344/1000
+dis_mile*1609.344
 </code></pre>
 
-<pre><code>## [1] 1.609
+<pre><code>## [1] 1609
 </code></pre>
 
 <pre><code class="r">#Q3. How much ml in 12.004 US oz coke can in US? 
@@ -150,6 +159,46 @@ can_oz * 29.5735
   <!-- Presenter Notes -->
 </slide>
 
+<slide class="span12" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Carousel</h2>
+  </hgroup>
+  <article data-timings="">
+    
+
+<div id="slide-5-carousel" class="carousel slide span12" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#slide-5-carousel" data-slide-to="1" class="active"></li>
+    <li data-target="#slide-5-carousel" data-slide-to="2" class=""></li>
+    <li data-target="#slide-5-carousel" data-slide-to="3" class=""></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="assets/img/convert-temperature.png" alt="">
+      <div class="carousel-caption"><p>Convert Temperature</p>
+</div>
+    </div>
+    <div class="item ">
+      <img src="assets/img/convert-length.png" alt="">
+      <div class="carousel-caption"><p>Convert Length</p>
+</div>
+    </div>
+    <div class="item ">
+      <img src="assets/img/convert-volume.png" alt="">
+      <div class="carousel-caption"><p>Convert Volume</p>
+</div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#slide-5-carousel" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#slide-5-carousel" data-slide="next">&rsaquo;</a>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <slide class="class" id="id" style="background:;">
   <hgroup>
     <h2>References</h2>
@@ -171,6 +220,10 @@ can_oz * 29.5735
 
 <p><a href="https://github.com/rstudio/shinyapps/blob/master/guide/guide.md">https://github.com/rstudio/shinyapps/blob/master/guide/guide.md</a></p>
 
+<p><a href="https://github.com/ramnathv/carouselLayout">https://github.com/ramnathv/carouselLayout</a></p>
+
+<p><a href="http://stackoverflow.com/questions/16904054/slidify-how-to-position-an-image">http://stackoverflow.com/questions/16904054/slidify-how-to-position-an-image</a></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -181,7 +234,7 @@ can_oz * 29.5735
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Why Unit conversion?'>
+        data-slide=1 title=''>
          1
       </a>
     </li>
@@ -205,8 +258,14 @@ can_oz * 29.5735
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='References'>
+        data-slide=5 title='Carousel'>
          5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='References'>
+         6
       </a>
     </li>
   </ul>
@@ -218,8 +277,16 @@ can_oz * 29.5735
   <![endif]-->
 </body>
   <!-- Load Javascripts for Widgets -->
-  <script src="./assets/js/impress.js"></script>
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="./assets/js/impress.js"></script>
 
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
   <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
