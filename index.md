@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Tue Jun 17 01:39:27 2014
+job         : Presentation made on Fri Jun 20 00:20:32 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -50,7 +50,7 @@ $mL = US oz * 29.5735$
 --- .codefont #id
 
 ## Examples used in daily life
-
+We do conversions from one unit to another in our daily life. Few examples..
 
 ```r
 #Q1. What is the human body temperature (37 degree celsius) in degree Fahrenheit?
