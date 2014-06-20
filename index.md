@@ -2,7 +2,7 @@
 title       : Project-ddp2014
 subtitle    : Project presentation of Unit conversion dynamic UI
 author      : Alok Juneja
-job         : Presentation made on Fri Jun 20 01:12:40 2014
+job         : Presentation made on Fri Jun 20 02:26:28 2014
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -31,7 +31,7 @@ There are several systems of measurements used in different countries and in dif
 4. Non-standard units
 5. Units of currency
 
---- .outfont #id 
+--- .txtfont #id 
 
 ## Temperature / Length / Volume Conversions
 
@@ -55,7 +55,7 @@ Volume conversion
 
 $mL = US oz * 29.5735$
 
---- .codefont #id
+--- .codefont .txtfont #id
 
 ## Examples used in daily life
 We do conversions from one unit to another in our daily life. Few examples..
@@ -90,25 +90,9 @@ can_oz * 29.5735
 ## [1] 355
 ```
 
---- .class #id 
+--- &carousel .span12 #id
 
-## Application and shiny source code
-
-Shiny source code:
-
-https://gist.github.com/junejaalok/9dfe302679c032a80c47
-
-Application on shinapps.io
-
-https://junejaalok.shinyapps.io/project-ddp2014/
-
-In case the DESCRIPTION  and README.md does not show you the full GUI on web browser, try to resize your web browser otherwise please use the following link... 
-
-https://junejaalok.shinyapps.io/project-ddp2014/?showcase=0
-
---- &carousel .span12
-
-## Carousel
+## Shiny application screen-shots
 
 *** {class: active, img: "assets/img/convert-temperature.png"}
 
@@ -122,7 +106,23 @@ Convert Length
 
 Convert Volume
 
---- .class #id
+--- .class #id 
+
+## Application and shiny source code
+
+Shiny source code:
+
+https://gist.github.com/junejaalok/9dfe302679c032a80c47
+
+Application on shinapps.io
+
+https://junejaalok.shinyapps.io/project-ddp2014/
+
+In case of the presence of the DESCRIPTION, README.md, server.R and ui.R do not show you the full GUI on web browser, try to resize your web browser otherwise please use the following link... 
+
+https://junejaalok.shinyapps.io/project-ddp2014/?showcase=0
+
+--- .txtfont #id
 
 ## References 
 
@@ -142,7 +142,11 @@ https://gist.github.com/jeromyanglim/2716336
 
 https://github.com/rstudio/shinyapps/blob/master/guide/guide.md
 
+https://github.com/ramnathv/slidify/issues/264
+
 https://github.com/ramnathv/carouselLayout
+
+https://github.com/ramnathv/carouselLayout/issues/1
 
 http://stackoverflow.com/questions/16904054/slidify-how-to-position-an-image
 
